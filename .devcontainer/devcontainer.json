@@ -1,7 +1,7 @@
 {
     "name": "Axon Ivy Dev Container",
     "dockerComposeFile": "docker-compose.yml",
-    "onCreateCommand": "mvn package --batch-mode -Dmaven.test.skip=true",
+    "onCreateCommand": "mvn package --batch-mode -Dmaven.test.skip=true -f sampleProject/",
     "service": "java",
     "workspaceFolder": "/workspace/${localWorkspaceFolderBasename}",
     "shutdownAction": "stopCompose",
